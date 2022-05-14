@@ -1,3 +1,48 @@
+:root {
+  --blue1: #1897ff;
+  --blue2: #0f3b6e;
+  --gray1: #5c5c5c;
+  --purple1: #b978f7;
+  --red1: #6e0000;
+  --red2: #490000; 
+}
 body {
-  background: blanchedalmond;
+  margin: 0;
+  background-color: var(--gray1);
+  color: var(--red1);
+  font-family: sans-serif;
+}
+* {
+  border: 1px solid var(--red1)
+}
+@media screen and (min-width: 100vw) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-basis: min-content;
+  }
+}
+.a {
+  padding: 1em;
+  min-height: 20vh;
+  min-width: 80vw;
+  background-color: var(--blue2);
+  flex-grow: 2;
+}
+.b {
+  padding: 1em;
+  min-height: 72vh;
+  min-width: 80vw;
+  background-color: var(--blue1);
+  flex-grow: 5;
+}
+.c {
+  padding: 1em;
+  min-height: 10vh;
+  min-width: 10vw;
+  background-color: var(--blue2);
+  flex-grow: 2;
 }
